@@ -1,0 +1,43 @@
+.bg-about {
+  background: #152331;
+  background: linear-gradient(to right, #152331, #000000);
+  filter: drop-shadow(2px 5px 5px rgba(0, 212, 255, 0.5)); /* Resplandor */
+}
+
+@keyframes neon-border {
+  0% {
+    border-image-source: linear-gradient(45deg, lime, turquoise);
+  }
+  25% {
+    border-image-source: linear-gradient(135deg, turquoise, dodgerblue);
+  }
+  50% {
+    border-image-source: linear-gradient(225deg, dodgerblue, violet);
+  }
+  75% {
+    border-image-source: linear-gradient(315deg, violet, lime);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, lime, turquoise);
+  }
+}
+
+.border-neon {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-radius: 6px;
+  animation: neon-border 5s infinite linear;
+  mask-image: radial-gradient(circle, white 80%, transparent);
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+
+h2 {
+  filter: drop-shadow(1px 2px 5px rgba(0, 212, 255, 0.5));
+}

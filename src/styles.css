@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estilos generales */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  background: #152331;
+  background: linear-gradient(to right, #152331, #000000);
+  background-attachment: fixed; /* Evita que el fondo se divida al hacer scroll */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+p-menubar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+#home {
+  background: transparent;
+}
+#projects {
+  background: transparent;
+}
+#contact {
+  background: transparent;
+}
+.p-galleria img {
+  max-width: 100%;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

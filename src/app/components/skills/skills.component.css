@@ -1,0 +1,40 @@
+@keyframes neon-border {
+  0% {
+    border-image-source: linear-gradient(45deg, lime, turquoise);
+  }
+  25% {
+    border-image-source: linear-gradient(135deg, turquoise, dodgerblue);
+  }
+  50% {
+    border-image-source: linear-gradient(225deg, dodgerblue, violet);
+  }
+  75% {
+    border-image-source: linear-gradient(315deg, violet, lime);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, lime, turquoise);
+  }
+}
+
+.border-neon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+  background-color: rgba(81, 219, 240, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.border-neon {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-radius: 6px;
+  animation: neon-border 5s infinite linear;
+
+  mask-image: radial-gradient(circle, white 90%, transparent);
+}
+h2 {
+  filter: drop-shadow(1px 2px 5px rgba(0, 212, 255, 0.5));
+}

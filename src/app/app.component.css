@@ -1,0 +1,137 @@
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+
+.bg-title {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 0px rgba(0, 212, 255, 0.5)); /* Resplandor */
+}
+
+.bg-subtitle {
+  background: linear-gradient(to right, #4cb8c4, #3cd3ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(1px 0px 5px rgba(0, 212, 255, 0.5)); /* Resplandor */
+}
+
+.bg-banner {
+  background: #152331;
+  background: linear-gradient(to right, #152331, #000000);
+  filter: drop-shadow(2px 5px 10px rgba(0, 212, 255, 0.5)); /* Resplandor */
+}
+.cursor {
+  display: inline-block;
+  width: 8px;
+  background-color: white;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.neon-text {
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #00e1ff;
+}
+
+/* Estilos base del menú */
+.custom-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 15px 0;
+  transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+/* Lista dentro del menú */
+.custom-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos de los elementos del menú */
+.custom-menu ul li {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500; /* ⬅️ Negrita */
+  position: relative; /* Necesario para la línea animada */
+
+  filter: drop-shadow(1px 2px 5px rgba(0, 212, 255, 0.5));
+  transition: color 0.3s ease-in-out;
+}
+
+/* Línea animada debajo del elemento */
+.custom-menu ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px; /* Posición de la línea */
+  width: 0%;
+  height: 3px;
+  background: #00f7ff; /* Color azul celeste neón */
+  box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff; /* Efecto neón */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+/* Efecto hover cuando el mouse pasa sobre el elemento */
+.custom-menu ul li:hover {
+  color: #00f7ff; /* Cambia el color del texto a neón azul celeste */
+}
+
+/* Animación de la línea en hover */
+.custom-menu ul li:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Fondo opaco cuando el usuario hace scroll */
+.scrolled {
+  background: rgba(0, 0, 0, 0.8); /* Negro con opacidad */
+  padding: 10px 0;
+}
+
+@keyframes neon-border {
+  0% {
+    border-image-source: linear-gradient(45deg, cyan, magenta);
+  }
+  25% {
+    border-image-source: linear-gradient(135deg, magenta, cyan);
+  }
+  50% {
+    border-image-source: linear-gradient(225deg, cyan, magenta);
+  }
+  75% {
+    border-image-source: linear-gradient(315deg, magenta, cyan);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, cyan, magenta);
+  }
+}
+
+.border-neon {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  border-width: 3px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-radius: 6px;
+  animation: neon-border 5s infinite linear;
+}
+.footer {
+  filter: drop-shadow(1px 2px 5px rgba(0, 212, 255, 0.5));
+}
