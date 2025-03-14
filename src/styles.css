@@ -10,9 +10,8 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-
-  background: #152331;
-  background: linear-gradient(to right, #152331, #000000);
+  background: #000a1f;
+  background: linear-gradient(to top, #030526, #020714, #03131f, #000000);
   background-attachment: fixed; /* Evita que el fondo se divida al hacer scroll */
 }
 
@@ -33,15 +32,6 @@ p-menubar {
   z-index: 1000;
 }
 
-#home {
-  background: transparent;
-}
-#projects {
-  background: transparent;
-}
-#contact {
-  background: transparent;
-}
 .p-galleria img {
   max-width: 100%;
 }

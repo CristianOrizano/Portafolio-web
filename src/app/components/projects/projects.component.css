@@ -3,8 +3,15 @@ h2 {
 }
 
 .bg-skill {
-  background: #152331;
-  background: linear-gradient(to right, #152331, #000000);
+  background: #000a1f;
+  background: linear-gradient(
+    to right,
+    #000000,
+    #0a0f1f,
+    #0c1424,
+    #101622,
+    #000000
+  );
   filter: drop-shadow(2px 5px 5px rgba(0, 212, 255, 0.5)); /* Resplandor */
 }
 

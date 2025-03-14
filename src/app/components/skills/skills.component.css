@@ -38,3 +38,14 @@
 h2 {
   filter: drop-shadow(1px 2px 5px rgba(0, 212, 255, 0.5));
 }
+.bg-skill {
+  background: #000a1f;
+  background: linear-gradient(
+    to circle,
+    #000000,
+    #0a0f1f,
+    #101d35,
+    #162234,
+    #000000
+  );
+}

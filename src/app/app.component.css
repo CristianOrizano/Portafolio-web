@@ -4,23 +4,31 @@ p {
 }
 
 .bg-title {
-  background: linear-gradient(to right, #e0eafc, #cfdef3);
-  -webkit-background-clip: text;
+  background: white;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(2px 2px 0px rgba(0, 212, 255, 0.5)); /* Resplandor */
 }
 
 .bg-subtitle {
-  background: linear-gradient(to right, #4cb8c4, #3cd3ad);
+  background: linear-gradient(to right, #22e1ff, #1d8fe1, #625eb1);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(1px 0px 5px rgba(0, 212, 255, 0.5)); /* Resplandor */
 }
 
 .bg-banner {
-  background: #152331;
-  background: linear-gradient(to right, #152331, #000000);
-  filter: drop-shadow(2px 5px 10px rgba(0, 212, 255, 0.5)); /* Resplandor */
+  background: #000a1f;
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #0a0f1f,
+    #101d35,
+    #162234,
+    #000000
+  );
+
+  filter: drop-shadow(2px 5px 5px rgba(0, 212, 255, 0.5)); /* Resplandor */
 }
 .cursor {
   display: inline-block;
@@ -134,4 +142,10 @@ p {
 }
 .footer {
   filter: drop-shadow(1px 2px 5px rgba(0, 212, 255, 0.5));
+}
+@media (max-width: 768px) {
+  .icon-links {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -13,6 +13,7 @@ export class ProjectsComponent {
   imagesElectroDash: any[] = [];
   imagesFusionFood: any[] = [];
   imagesPelisflix: any[] = [];
+  imagesMicros: any[] = [];
   responsiveOptions: any[] = [];
   displayVideoDialogFusion: boolean = false;
   displayVideoDialogElectro: boolean = false;
@@ -69,6 +70,17 @@ export class ProjectsComponent {
       {
         itemImageSrc: 'pelisflix/detalle.png',
         thumbnailImageSrc: 'pelisflix/detalle.png',
+      },
+    ];
+
+    this.imagesMicros = [
+      {
+        itemImageSrc: 'micro/spring1.jpg',
+        thumbnailImageSrc: 'micro/spring1.jpg',
+      },
+      {
+        itemImageSrc: 'micro/spring2.png',
+        thumbnailImageSrc: 'micro/spring2.png',
       },
     ];
 
