@@ -3,6 +3,10 @@ p {
   font-weight: 100;
 }
 
+.clip {
+  clip-path: polygon(20% 5%, 100% 5%, 100% 100%, 3% 98%);
+}
+
 .bg-title {
   background: white;
   background-clip: text;
@@ -10,26 +14,13 @@ p {
 }
 
 .bg-subtitle {
-  background: linear-gradient(to right, #22e1ff, #1d8fe1, #625eb1);
+  background: #ec008c;
+  background: linear-gradient(to right, #ec008c, #fc6767);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(1px 0px 5px rgba(0, 212, 255, 0.5)); /* Resplandor */
 }
 
-.bg-banner {
-  background: #000a1f;
-  background: linear-gradient(
-    to bottom,
-    #000000,
-    #0a0f1f,
-    #101d35,
-    #162234,
-    #000000
-  );
-
-  filter: drop-shadow(2px 5px 5px rgba(0, 212, 255, 0.5)); /* Resplandor */
-}
 .cursor {
   display: inline-block;
   width: 8px;
@@ -90,14 +81,14 @@ p {
   bottom: -5px; /* Posición de la línea */
   width: 0%;
   height: 3px;
-  background: #00f7ff; /* Color azul celeste neón */
-  box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff; /* Efecto neón */
+  background: #ff6a00;
+  box-shadow: 0 0 10px #ff6a00, 0 0 25px #ff8800, 0 0 35px #ffaa00;
   transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
 /* Efecto hover cuando el mouse pasa sobre el elemento */
 .custom-menu ul li:hover {
-  color: #00f7ff; /* Cambia el color del texto a neón azul celeste */
+  color: #ff6a00; /* Cambia el color del texto a neón azul celeste */
 }
 
 /* Animación de la línea en hover */
@@ -131,15 +122,24 @@ p {
 }
 
 .border-neon {
+  transition: all 0.3s ease-in-out;
   position: relative;
   display: inline-block;
   padding: 10px;
   border-width: 3px;
   border-style: solid;
   border-image-slice: 1;
-  border-radius: 6px;
+  border-radius: 20px;
   animation: neon-border 5s infinite linear;
+  mask-image: radial-gradient(circle, white 95%, transparent);
 }
+
+.border-neon:hover {
+  background: #ff512f;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  transform: scale(1.03); /* zoom suave */
+}
+
 .footer {
   filter: drop-shadow(1px 2px 5px rgba(0, 212, 255, 0.5));
 }

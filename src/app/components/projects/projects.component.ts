@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PrimeModule } from '../../shared/prime/prime.module';
 import { IconComponent } from '../../shared/icon/icon.component';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-projects',
@@ -19,6 +20,7 @@ export class ProjectsComponent {
   displayVideoDialogElectro: boolean = false;
 
   ngOnInit() {
+    AOS.init();
     // Lista de imágenes con miniaturas
     this.imagesElectroDash = [
       {
@@ -90,5 +92,8 @@ export class ProjectsComponent {
       { breakpoint: '768px', numVisible: 2 },
       { breakpoint: '560px', numVisible: 1 },
     ];
+  }
+  redirectToUrl() {
+    window.open('https://app-pelisflix-react-cristiano.netlify.app/', '_blank');
   }
 }

@@ -3,16 +3,8 @@ h2 {
 }
 
 .bg-skill {
-  background: #000a1f;
-  background: linear-gradient(
-    to right,
-    #000000,
-    #0a0f1f,
-    #0c1424,
-    #101622,
-    #000000
-  );
-  filter: drop-shadow(2px 5px 5px rgba(0, 212, 255, 0.5)); /* Resplandor */
+  background-color: #0f1624;
+  background: linear-gradient(to right, #0f1624, #1c1a2e);
 }
 
 .bg-skill svg path {
@@ -52,11 +44,22 @@ h2 {
   border-image-slice: 1;
   border-radius: 6px;
   animation: neon-border 5s infinite linear;
+  mask-image: radial-gradient(circle, white 95%, transparent);
 }
-.p-button-success {
-  background: #ec008c;
-  background: linear-gradient(to right, #ec008c, #fc6767);
-  border: none;
+.button-card {
   color: white;
-  transition: 0.3s;
+}
+.button-card:hover {
+  background-color: #fb2c36;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(246, 27, 140, 0.4);
+  transform: scale(1.03); /* ligero zoom */
+}
+
+.hover-zoom {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.hover-zoom:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }

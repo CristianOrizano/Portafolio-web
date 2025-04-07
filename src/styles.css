@@ -10,8 +10,9 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #000a1f;
-  background: linear-gradient(to top, #030526, #020714, #03131f, #000000);
+  background-color: #181225;
+  background: linear-gradient(to right, #181225, #1d142c);
+
   background-attachment: fixed; /* Evita que el fondo se divida al hacer scroll */
 }
 

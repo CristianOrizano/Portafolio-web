@@ -1,7 +1,7 @@
 <h2 class="text-white text-center mt-8">Projects</h2>
 <div class="grid  flex justify-content-center mt-4">
-    <div class="col-12 md:col-10 border-round border-neon shadow-8 p-5 bg-skill mb-5">
-        <div class="grid flex justify-content-center ">
+    <div class="hover-zoom col-12 md:col-10 border-round border-300 border-1 shadow-8 p-5 bg-skill mb-5">
+        <div data-aos="fade-right" data-aos-duration="2300" class="grid flex justify-content-center ">
             <div class="col-12 md:col-5 flex align-items-center">
                 <div class="card">
                     <p-galleria [value]="imagesElectroDash" [responsiveOptions]="responsiveOptions" [circular]="true"
@@ -15,7 +15,10 @@
                 </div>
             </div>
             <div class="col-12 md:col-7 px-5">
-                <h1 class="text-2xl font-bold text-100">Electro Dash</h1>
+                <h1 class="text-2xl font-bold">
+                    <span class="text-white">Electro </span>
+                    <span class="text-orange-500">Dash</span>
+                </h1>
                 <p class="mt-2 text-sm text-300">
                     Proyecto Electro Dash es una aplicación de gestión diseñada para tiendas de productos electrónicos.
                     Ofrece una plataforma intuitiva y funcional para administrar ventas, clientes, inventario y más. Con
@@ -35,7 +38,7 @@
                 <p-divider />
                 <div class="mt-4 flex justify-content-between">
                     <button pButton pRipple label="View Demo" size="small" (click)="displayVideoDialogElectro = true"
-                        class="p-button-success"></button>
+                        class="button-card" severity="help" [outlined]="true"></button>
 
                     <div class="flex gap-5 text-white">
                         <div class="flex gap-2 align-items-center">
@@ -61,8 +64,8 @@
         </div>
     </div>
 
-    <div class="col-12 md:col-10 border-round border-neon shadow-8 p-5 bg-skill mb-5">
-        <div class="grid flex justify-content-center ">
+    <div class="hover-zoom col-12 md:col-10 border-round border-300 border-1 shadow-8 p-5 bg-skill mb-5">
+        <div data-aos="fade-left" data-aos-duration="2300" class="grid flex justify-content-center ">
             <div class="col-12 md:col-5 flex align-items-center">
                 <div class="card">
                     <p-galleria [value]="imagesFusionFood" [responsiveOptions]="responsiveOptions" [circular]="true"
@@ -76,7 +79,10 @@
                 </div>
             </div>
             <div class="col-12 md:col-7 px-5">
-                <h1 class="text-2xl font-bold text-100">Fusion Food</h1>
+                <h1 class="text-2xl font-bold">
+                    <span class="text-white">Fusion </span>
+                    <span class="text-orange-500">Food</span>
+                </h1>
                 <p class="mt-2 text-sm text-300">
                     FusionFood es una plataforma en línea que brinda a los clientes una experiencia completa para
                     realizar pedidos de comida. Además, ofrece a los restaurantes un dashboard integral para gestionar
@@ -97,7 +103,7 @@
                 <p-divider />
                 <div class="mt-4 flex justify-content-between">
                     <button pButton pRipple label="View Demo" size="small" (click)="displayVideoDialogFusion = true"
-                        class="p-button-success"></button>
+                        class="button-card" severity="help" [outlined]="true"></button>
 
                     <div class="flex gap-5 text-white">
                         <div class="flex gap-2 align-items-center">
@@ -123,8 +129,8 @@
         </div>
     </div>
 
-    <div class="col-12 md:col-10 border-round border-neon shadow-8 p-5 bg-skill mb-5">
-        <div class="grid flex justify-content-center ">
+    <div class="hover-zoom col-12 md:col-10 border-round  border-300 border-1 shadow-8 p-5 bg-skill mb-5">
+        <div data-aos="fade-right" data-aos-duration="2300" class="grid flex justify-content-center ">
             <div class="col-12 md:col-5 flex align-items-center">
                 <div class="card">
                     <p-galleria [value]="imagesPelisflix" [responsiveOptions]="responsiveOptions" [circular]="true"
@@ -138,7 +144,10 @@
                 </div>
             </div>
             <div class="col-12 md:col-7 px-5">
-                <h1 class="text-2xl font-bold text-100">Pelisflix</h1>
+                <h1 class="text-2xl font-bold">
+                    <span class="text-white">Pelis</span>
+                    <span class="text-orange-500">flix</span>
+                </h1>
                 <p class="mt-2 text-sm text-300">
                     PelisFlix es una aplicación web que permite explorar y buscar películas en tiempo real. Ofrece
                     detalles completos de cada título y una interfaz intuitiva para una experiencia de navegación
@@ -156,9 +165,8 @@
 
                 <p-divider />
                 <div class="mt-4 flex justify-content-between">
-                    <a pButton pRipple label="View Demo" size="small" class="p-button-success no-underline"
-                        href="https://app-pelisflix-react-cristiano.netlify.app/" target="_blank">
-                    </a>
+                    <button pButton pRipple label="View Demo" size="small" (click)="redirectToUrl()" class="button-card"
+                        severity="help" [outlined]="true"></button>
 
                     <div class="flex gap-5 text-white">
                         <div class="flex gap-2 align-items-center">
@@ -174,8 +182,8 @@
         </div>
     </div>
 
-    <div class="col-12 md:col-10 border-round border-neon shadow-8 p-5 bg-skill mb-5">
-        <div class="grid flex justify-content-center ">
+    <div class="hover-zoom col-12 md:col-10 border-round  border-300 border-1 shadow-8 p-5 bg-skill mb-5">
+        <div data-aos="fade-left" data-aos-duration="2300" class="grid flex justify-content-center ">
             <div class="col-12 md:col-5 flex align-items-center">
                 <div class="card">
                     <p-galleria [value]="imagesMicros" [responsiveOptions]="responsiveOptions" [circular]="true"
@@ -189,7 +197,10 @@
                 </div>
             </div>
             <div class="col-12 md:col-7 px-5">
-                <h1 class="text-2xl font-bold text-100">Sistema de Microservicios</h1>
+                <h1 class="text-2xl font-bold">
+                    <span class="text-white">Sistema de </span>
+                    <span class="text-orange-500">Microservicios</span>
+                </h1>
                 <p class="mt-2 text-sm text-300">
                     Proyecto de práctica para explorar arquitectura de microservicios con Spring Boot, integrando Eureka
                     Server, Config Server, API Gateway y Kafka para comunicación asíncrona. También incluye Zipkin para
@@ -207,9 +218,8 @@
 
                 <p-divider />
                 <div class="mt-4 flex justify-content-between">
-                    <a pButton pRipple label="View Demo" size="small" class="p-button-success no-underline"
-                        target="_blank">
-                    </a>
+                    <button pButton pRipple label="View Demo" size="small" class="button-card" severity="help"
+                        [outlined]="true"></button>
 
                     <div class="flex gap-5 text-white">
                         <div class="flex gap-2 align-items-center">
