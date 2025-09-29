@@ -35,6 +35,7 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { TabViewModule } from 'primeng/tabview';
 import { CarouselModule } from 'primeng/carousel';
 import { GalleriaModule } from 'primeng/galleria';
+import { TimelineModule } from 'primeng/timeline';
 
 @NgModule({
   declarations: [],
@@ -42,6 +43,8 @@ import { GalleriaModule } from 'primeng/galleria';
   exports: [
     CommonModule,
     FormsModule,
+    TimelineModule,
+    CardModule,
     TableModule,
     TabViewModule,
     AccordionModule,

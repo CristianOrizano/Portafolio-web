@@ -20,66 +20,61 @@ export class ProjectsComponent {
   displayVideoDialogElectro: boolean = false;
 
   ngOnInit() {
-    AOS.init();
+    AOS.init({
+      duration: 1500,
+      once: false, // 👈 permite desaparecer y reaparecer
+    });
     // Lista de imágenes con miniaturas
     this.imagesElectroDash = [
       {
-        itemImageSrc: 'electrodash/loginelectro.png',
-        thumbnailImageSrc: 'electrodash/loginelectro.png',
+        itemImageSrc: 'electrodash/loginelectro.webp',
+        thumbnailImageSrc: 'electrodash/loginelectro.webp',
       },
       {
-        itemImageSrc: 'electrodash/dashelectro.png',
-        thumbnailImageSrc: 'electrodash/dashelectro.png',
+        itemImageSrc: 'electrodash/dashelectro.webp',
+        thumbnailImageSrc: 'electrodash/dashelectro.webp',
       },
       {
-        itemImageSrc: 'electrodash/productoelectro.png',
-        thumbnailImageSrc: 'electrodash/productoelectro.png',
+        itemImageSrc: 'electrodash/productoelectro.webp',
+        thumbnailImageSrc: 'electrodash/productoelectro.webp',
       },
       {
-        itemImageSrc: 'electrodash/ventaelectro.png',
-        thumbnailImageSrc: 'electrodash/ventaelectro.png',
+        itemImageSrc: 'electrodash/ventaelectro.webp',
+        thumbnailImageSrc: 'electrodash/ventaelectro.webp',
       },
     ];
 
     this.imagesFusionFood = [
       {
-        itemImageSrc: 'fusionfood/loginfusion.png',
-        thumbnailImageSrc: 'fusionfood/loginfusion.png',
+        itemImageSrc: 'fusionfood/loginfusion.webp',
+        thumbnailImageSrc: 'fusionfood/loginfusion.webp',
       },
       {
-        itemImageSrc: 'fusionfood/dashfusion.png',
-        thumbnailImageSrc: 'fusionfood/dashfusion.png',
+        itemImageSrc: 'fusionfood/dashfusion.webp',
+        thumbnailImageSrc: 'fusionfood/dashfusion.webp',
       },
       {
-        itemImageSrc: 'fusionfood/foodfusion.png',
-        thumbnailImageSrc: 'fusionfood/foodfusion.png',
+        itemImageSrc: 'fusionfood/foodfusion.webp',
+        thumbnailImageSrc: 'fusionfood/foodfusion.webp',
       },
       {
-        itemImageSrc: 'fusionfood/menufusion.png',
-        thumbnailImageSrc: 'fusionfood/menufusion.png',
+        itemImageSrc: 'fusionfood/menufusion.webp',
+        thumbnailImageSrc: 'fusionfood/menufusion.webp',
       },
     ];
 
     this.imagesPelisflix = [
       {
-        itemImageSrc: 'pelisflix/bannerpelis.png',
-        thumbnailImageSrc: 'pelisflix/bannerpelis.png',
+        itemImageSrc: 'pelisflix/bannerpelis.webp',
+        thumbnailImageSrc: 'pelisflix/bannerpelis.webp',
       },
       {
-        itemImageSrc: 'pelisflix/peliculas.png',
-        thumbnailImageSrc: 'pelisflix/peliculas.png',
-      },
-      {
-        itemImageSrc: 'pelisflix/detalle.png',
-        thumbnailImageSrc: 'pelisflix/detalle.png',
+        itemImageSrc: 'pelisflix/movies.webp',
+        thumbnailImageSrc: 'pelisflix/movies.webp',
       },
     ];
 
     this.imagesMicros = [
-      {
-        itemImageSrc: 'micro/spring1.jpg',
-        thumbnailImageSrc: 'micro/spring1.jpg',
-      },
       {
         itemImageSrc: 'micro/spring2.png',
         thumbnailImageSrc: 'micro/spring2.png',

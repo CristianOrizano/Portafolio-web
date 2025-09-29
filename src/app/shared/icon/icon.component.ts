@@ -10,4 +10,5 @@ import { PrimeModule } from '../prime/prime.module';
 })
 export class IconComponent {
   @Input() name!: string;
+  @Input() size: number = 42; // tamaño por defecto
 }

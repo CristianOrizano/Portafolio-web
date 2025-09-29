@@ -1,0 +1,24 @@
+<h2 class="text-200 font-bold text-3xl text-center mt-7 relative custom-underline">
+    Experiencia
+</h2>
+<div class="card  p-0 md:p-8">
+    <p-timeline [value]="experiences" align="alternate" styleClass="customized-timeline">
+        <ng-template pTemplate="marker" let-exp>
+            <span
+                class="flex w-2rem h-2rem align-items-center justify-content-center text-white border-circle z-1 shadow-1"
+                [style]="{ 'background-color': exp.color }">
+                <i [class]="exp.icon"></i>
+            </span>
+        </ng-template>
+
+        <ng-template pTemplate="content" let-exp>
+            <p-card [header]="exp.role" [subheader]="exp.company + ' | ' + exp.period" styleClass="custom-card"
+                data-aos="fade-right">
+
+                <ul>
+                    <li class="text-sm mb-2 text-400" *ngFor="let d of exp.description">{{ d }}</li>
+                </ul>
+            </p-card>
+        </ng-template>
+    </p-timeline>
+</div>

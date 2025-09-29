@@ -1,10 +1,7 @@
 p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-}
-
-.clip {
-  clip-path: polygon(20% 5%, 100% 5%, 100% 100%, 3% 98%);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #9ca3af;
 }
 
 .bg-title {
@@ -14,10 +11,9 @@ p {
 }
 
 .bg-subtitle {
-  background: #ec008c;
-  background: linear-gradient(to right, #ec008c, #fc6767);
-  background-clip: text;
+  background: linear-gradient(to top left, #ff512f, #dd2476);
   -webkit-background-clip: text;
+  background-clip: text; /* Propiedad estándar */
   -webkit-text-fill-color: transparent;
 }
 
@@ -27,15 +23,11 @@ p {
   background-color: white;
   animation: blink 0.7s infinite;
 }
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-.neon-text {
-  color: #0ff;
-  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff, 0 0 20px #00e1ff;
+.button-card:hover {
+  background: linear-gradient(to top left, #ff512f, #dd2476);
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(246, 27, 140, 0.4);
+  transform: scale(1.03); /* ligero zoom */
 }
 
 /* Estilos base del menú */
@@ -81,14 +73,15 @@ p {
   bottom: -5px; /* Posición de la línea */
   width: 0%;
   height: 3px;
-  background: #ff6a00;
-  box-shadow: 0 0 10px #ff6a00, 0 0 25px #ff8800, 0 0 35px #ffaa00;
+  background: #ff416c;
+  box-shadow: 0 0 10px #ff6a00, 0 0 25px #ff8800, 0 0 35px #ff416c;
   transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
 /* Efecto hover cuando el mouse pasa sobre el elemento */
 .custom-menu ul li:hover {
-  color: #ff6a00; /* Cambia el color del texto a neón azul celeste */
+  font-weight: 500; /* ⬅️ Negrita */
+  color: #ff416c;
 }
 
 /* Animación de la línea en hover */
@@ -103,46 +96,6 @@ p {
   padding: 10px 0;
 }
 
-@keyframes neon-border {
-  0% {
-    border-image-source: linear-gradient(45deg, cyan, magenta);
-  }
-  25% {
-    border-image-source: linear-gradient(135deg, magenta, cyan);
-  }
-  50% {
-    border-image-source: linear-gradient(225deg, cyan, magenta);
-  }
-  75% {
-    border-image-source: linear-gradient(315deg, magenta, cyan);
-  }
-  100% {
-    border-image-source: linear-gradient(45deg, cyan, magenta);
-  }
-}
-
-.border-neon {
-  transition: all 0.3s ease-in-out;
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  border-width: 3px;
-  border-style: solid;
-  border-image-slice: 1;
-  border-radius: 20px;
-  animation: neon-border 5s infinite linear;
-  mask-image: radial-gradient(circle, white 95%, transparent);
-}
-
-.border-neon:hover {
-  background: #ff512f;
-  background: linear-gradient(to right, #ff512f, #dd2476);
-  transform: scale(1.03); /* zoom suave */
-}
-
-.footer {
-  filter: drop-shadow(1px 2px 5px rgba(0, 212, 255, 0.5));
-}
 @media (max-width: 768px) {
   .icon-links {
     flex-direction: column;

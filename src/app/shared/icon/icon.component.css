@@ -3,7 +3,3 @@ svg path {
   stroke: #c5c4c4; /* Borde blanco para mejor visibilidad */
   stroke-width: 0.5;
 }
-
-svg {
-  filter: drop-shadow(2px 2px 5px rgba(0, 212, 255, 0.5)); /* Resplandor */
-}

@@ -5,6 +5,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { IconComponent } from './shared/icon/icon.component';
 import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     IconComponent,
     AboutComponent,
     SkillsComponent,
+    TimelineComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -33,10 +35,11 @@ export class AppComponent {
   index: number = 0; // Posición actual en el texto
 
   items = [
-    { label: 'Home', section: 'home' },
-    { label: 'About', section: 'about' },
+    { label: 'Inicio', section: 'home' },
+    { label: 'Sobre mí', section: 'about' },
     { label: 'Skills', section: 'skill' },
-    { label: 'Projects', section: 'projects' },
+    { label: 'Proyectos', section: 'projects' },
+    { label: 'Experiencia', section: 'timeline' },
   ];
   constructor(private renderer: Renderer2) {}
   activeSection = 'home';

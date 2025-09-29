@@ -1,10 +1,6 @@
-h2 {
-  filter: drop-shadow(1px 2px 5px rgba(0, 212, 255, 0.5));
-}
-
 .bg-skill {
-  background-color: #0f1624;
-  background: linear-gradient(to right, #0f1624, #1c1a2e);
+  background-color: #151e2f;
+  background: linear-gradient(to right, #1c1329, #141125);
 }
 
 .bg-skill svg path {
@@ -14,43 +10,14 @@ h2 {
 }
 
 .bg-skill svg {
-  filter: drop-shadow(2px 2px 5px rgba(0, 212, 255, 0.5)); /* Resplandor */
+  filter: drop-shadow(2px 2px 5px rgba(129, 159, 165, 0.5)); /* Resplandor */
 }
 
-@keyframes neon-border {
-  0% {
-    border-image-source: linear-gradient(45deg, lime, turquoise);
-  }
-  25% {
-    border-image-source: linear-gradient(135deg, turquoise, dodgerblue);
-  }
-  50% {
-    border-image-source: linear-gradient(225deg, dodgerblue, violet);
-  }
-  75% {
-    border-image-source: linear-gradient(315deg, violet, lime);
-  }
-  100% {
-    border-image-source: linear-gradient(45deg, lime, turquoise);
-  }
-}
-
-.border-neon {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  border-width: 1px;
-  border-style: solid;
-  border-image-slice: 1;
-  border-radius: 6px;
-  animation: neon-border 5s infinite linear;
-  mask-image: radial-gradient(circle, white 95%, transparent);
-}
 .button-card {
   color: white;
 }
 .button-card:hover {
-  background-color: #fb2c36;
+  background: linear-gradient(to top left, #ff512f, #dd2476);
   color: #ffffff;
   box-shadow: 0 0 12px rgba(246, 27, 140, 0.4);
   transform: scale(1.03); /* ligero zoom */
@@ -62,4 +29,56 @@ h2 {
 .hover-zoom:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-optical-sizing: auto;
+  color: #9ca3af;
+}
+
+.custom-underline::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100px; /* puedes ajustar el ancho */
+  margin: 0 auto;
+  margin-top: 8px;
+  background: linear-gradient(
+    to right,
+    #d9d7d7 0%,
+    #ece8e8 50%,
+    #ff512f 50%,
+    #dd2476 100%
+  );
+}
+
+.text-sub {
+  background: #ff4b2b;
+  background: linear-gradient(to bottom, #ff4b2b, #ff416c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+::ng-deep .custom-btn.p-button {
+  font-family: "Inter", sans-serif;
+
+  background: #ff4b2b;
+  background: linear-gradient(to bottom, #ff4b2b, #ff416c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #ff416c; /* mismo amarillo que warning */
+}
+
+::ng-deep .custom-btn.p-button:hover {
+  background-color: #fb2c36;
+  color: #ffffff;
+  box-shadow: 0 0 13px rgba(246, 27, 140, 0.4);
+  transform: scale(1.04); /* ligero zoom */
+}
+
+::ng-deep .custom-btn.p-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5); /* efecto focus */
 }

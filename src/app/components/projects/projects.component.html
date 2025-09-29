@@ -1,30 +1,33 @@
-<h2 class="text-white text-center mt-8">Projects</h2>
-<div class="grid  flex justify-content-center mt-4">
-    <div class="hover-zoom col-12 md:col-10 border-round border-300 border-1 shadow-8 p-5 bg-skill mb-5">
-        <div data-aos="fade-right" data-aos-duration="2300" class="grid flex justify-content-center ">
-            <div class="col-12 md:col-5 flex align-items-center">
+<h2 class="text-200 font-bold text-3xl text-center mt-7 relative custom-underline">
+    Proyectos
+</h2>
+
+<div class="grid  flex justify-content-center mt-7">
+    <div class="hover-zoom col-12 md:col-10 border-round-2xl  border-300 border-1 shadow-8 p-5 bg-skill mb-6">
+        <div class="grid flex justify-content-center ">
+            <div class="col-12 md:col-6 flex align-items-center" data-aos="fade-right">
                 <div class="card">
                     <p-galleria [value]="imagesElectroDash" [responsiveOptions]="responsiveOptions" [circular]="true"
                         [numVisible]="3" [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true"
                         [showItemNavigators]="true">
                         <ng-template pTemplate="item" let-item>
-                            <img [src]="item.itemImageSrc" class="border-round" width="100%"
+                            <img [src]="item.itemImageSrc" class="border-round-2xl" width="100%"
                                 style="object-fit: contain;" />
                         </ng-template>
                     </p-galleria>
                 </div>
             </div>
-            <div class="col-12 md:col-7 px-5">
+            <div class="col-12 md:col-6 px-5" data-aos="fade-right">
                 <h1 class="text-2xl font-bold">
                     <span class="text-white">Electro </span>
-                    <span class="text-orange-500">Dash</span>
+                    <span class="text-sub">Dash</span>
                 </h1>
-                <p class="mt-2 text-sm text-300">
+                <p class="mt-2 text-sm ">
                     Proyecto Electro Dash es una aplicación de gestión diseñada para tiendas de productos electrónicos.
                     Ofrece una plataforma intuitiva y funcional para administrar ventas, clientes, inventario y más. Con
                     herramientas de reportes y análisis gráfico, ayuda a optimizar operaciones eficientemente.
                 </p>
-                <h2 class="mt-3 font-semibold text-xl text-100 mt-4">Tecnologías</h2>
+                <h2 class="mt-3 font-semibold text-xl text-300 mt-4">Tecnologías</h2>
                 <p class="flex flex-wrap gap-3">
                     <app-icon name="css"></app-icon>
                     <app-icon name="angular"></app-icon>
@@ -37,24 +40,26 @@
 
                 <p-divider />
                 <div class="mt-4 flex justify-content-between">
-                    <button pButton pRipple label="View Demo" size="small" (click)="displayVideoDialogElectro = true"
-                        class="button-card" severity="help" [outlined]="true"></button>
+
+
+                    <p-button label="View Demo" size="small" [outlined]="true" styleClass="custom-btn"
+                        (click)="displayVideoDialogElectro = true" />
 
                     <div class="flex gap-5 text-white">
                         <div class="flex gap-2 align-items-center">
                             <a href="https://github.com/CristianOrizano/App-ElectroDash-Angular" target="_blank"
-                                class="flex gap-2 align-items-center px-2 py-1 border-round rounded-md transition-all hover:bg-gray-700 no-underline">
+                                class="flex gap-2 align-items-center px-2 py-1 border-round-xl rounded-md transition-all button-card no-underline">
                                 <app-icon name="github" class="text-2xl"></app-icon>
-                                <span class="text-sm font-medium text-white">Front</span>
+                                <span class="text-sm font-medium text-300">Front</span>
                             </a>
 
                         </div>
 
                         <div class="flex gap-2 align-items-center">
                             <a href="https://github.com/CristianOrizano/App-ElectroDash-Backend" target="_blank"
-                                class="flex gap-2 align-items-center px-2 py-1 border-round rounded-md transition-all hover:bg-gray-700 no-underline">
+                                class="flex gap-2 align-items-center px-2 py-1 border-round-xl rounded-md transition-all button-card no-underline">
                                 <app-icon name="github" class="text-2xl"></app-icon>
-                                <span class="text-sm font-medium text-white">Back</span>
+                                <span class="text-sm font-medium text-300">Back</span>
                             </a>
 
                         </div>
@@ -64,31 +69,32 @@
         </div>
     </div>
 
-    <div class="hover-zoom col-12 md:col-10 border-round border-300 border-1 shadow-8 p-5 bg-skill mb-5">
-        <div data-aos="fade-left" data-aos-duration="2300" class="grid flex justify-content-center ">
-            <div class="col-12 md:col-5 flex align-items-center">
+    <div class="hover-zoom col-12 md:col-10 border-round-2xl border-300 border-1 shadow-8 p-5 bg-skill mb-6">
+        <div class="grid flex justify-content-center ">
+            <div class="col-12 md:col-6 flex align-items-center" data-aos="fade-right">
                 <div class="card">
                     <p-galleria [value]="imagesFusionFood" [responsiveOptions]="responsiveOptions" [circular]="true"
                         [numVisible]="3" [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true"
                         [showItemNavigators]="true">
                         <ng-template pTemplate="item" let-item>
-                            <img [src]="item.itemImageSrc" class="border-round" width="100%"
+                            <img [src]="item.itemImageSrc" class="border-round-2xl" width="100%"
                                 style="object-fit: contain;" />
                         </ng-template>
                     </p-galleria>
                 </div>
             </div>
-            <div class="col-12 md:col-7 px-5">
+            <div class="col-12 md:col-6 px-5" data-aos="fade-right">
                 <h1 class="text-2xl font-bold">
                     <span class="text-white">Fusion </span>
-                    <span class="text-orange-500">Food</span>
+                    <span class="text-sub">Food</span>
                 </h1>
-                <p class="mt-2 text-sm text-300">
+                <p class="mt-2 text-sm ">
                     FusionFood es una plataforma en línea que brinda a los clientes una experiencia completa para
-                    realizar pedidos de comida. Además, ofrece a los restaurantes un dashboard integral para gestionar
+                    realizar pedidos de comida. Además, ofrece a los restaurantes un dashboard integral para
+                    gestionar
                     sus operaciones de manera eficiente.
                 </p>
-                <h2 class="mt-3 font-semibold text-xl text-100">Tecnologías</h2>
+                <h2 class="mt-3 font-semibold text-xl text-300">Tecnologías</h2>
                 <p class="flex flex-wrap gap-3">
                     <app-icon name="css"></app-icon>
                     <app-icon name="react"></app-icon>
@@ -102,58 +108,60 @@
 
                 <p-divider />
                 <div class="mt-4 flex justify-content-between">
-                    <button pButton pRipple label="View Demo" size="small" (click)="displayVideoDialogFusion = true"
-                        class="button-card" severity="help" [outlined]="true"></button>
+                    <p-button label="View Demo" size="small" [outlined]="true" styleClass="custom-btn"
+                        (click)="displayVideoDialogFusion = true" />
 
                     <div class="flex gap-5 text-white">
                         <div class="flex gap-2 align-items-center">
                             <a href="https://github.com/CristianOrizano/App-FusionFood-React" target="_blank"
-                                class="flex gap-2 align-items-center px-2 py-1 border-round rounded-md transition-all hover:bg-gray-700 no-underline">
+                                class="flex gap-2 align-items-center px-2 py-1 border-round-2xl rounded-md transition-all button-card no-underline">
                                 <app-icon name="github" class="text-2xl"></app-icon>
-                                <span class="text-sm font-medium text-white">Front</span>
+                                <span class="text-sm font-medium text-300">Front</span>
                             </a>
 
                         </div>
 
                         <div class="flex gap-2 align-items-center">
                             <a href="https://github.com/CristianOrizano/App-FusionFood-Backend" target="_blank"
-                                class="flex gap-2 align-items-center px-2 py-1 border-round rounded-md transition-all hover:bg-gray-700 no-underline">
+                                class="flex gap-2 align-items-center px-2 py-1 border-round-2xl rounded-md transition-all button-card no-underline">
                                 <app-icon name="github" class="text-2xl"></app-icon>
-                                <span class="text-sm font-medium text-white">Back</span>
+                                <span class="text-sm font-medium text-300">Back</span>
                             </a>
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="hover-zoom col-12 md:col-10 border-round  border-300 border-1 shadow-8 p-5 bg-skill mb-5">
-        <div data-aos="fade-right" data-aos-duration="2300" class="grid flex justify-content-center ">
-            <div class="col-12 md:col-5 flex align-items-center">
+    <div class="hover-zoom col-12 md:col-10 border-round-2xl  border-300 border-1 shadow-8 p-5 bg-skill mb-6">
+        <div class="grid flex justify-content-center ">
+            <div class="col-12 md:col-6 flex align-items-center" data-aos="fade-right">
                 <div class="card">
                     <p-galleria [value]="imagesPelisflix" [responsiveOptions]="responsiveOptions" [circular]="true"
                         [numVisible]="3" [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true"
                         [showItemNavigators]="true">
                         <ng-template pTemplate="item" let-item>
-                            <img [src]="item.itemImageSrc" class="border-round" width="100%"
-                                style="object-fit: contain;" />
+                            <img [src]="item.itemImageSrc" class="border-round-2xl" style="object-fit: contain;" />
                         </ng-template>
                     </p-galleria>
+
+
                 </div>
             </div>
-            <div class="col-12 md:col-7 px-5">
+            <div class="col-12 md:col-6 px-5" data-aos="fade-right">
                 <h1 class="text-2xl font-bold">
                     <span class="text-white">Pelis</span>
-                    <span class="text-orange-500">flix</span>
+                    <span class="text-sub">flix</span>
                 </h1>
-                <p class="mt-2 text-sm text-300">
+                <p class="mt-2 text-sm ">
                     PelisFlix es una aplicación web que permite explorar y buscar películas en tiempo real. Ofrece
                     detalles completos de cada título y una interfaz intuitiva para una experiencia de navegación
                     fluida.
                 </p>
-                <h2 class="mt-3 font-semibold text-xl text-100">Tecnologías</h2>
+                <h2 class="mt-3 font-semibold text-xl text-300">Tecnologías</h2>
                 <p class="flex flex-wrap gap-3">
                     <app-icon name="css"></app-icon>
                     <app-icon name="javascript"></app-icon>
@@ -165,15 +173,15 @@
 
                 <p-divider />
                 <div class="mt-4 flex justify-content-between">
-                    <button pButton pRipple label="View Demo" size="small" (click)="redirectToUrl()" class="button-card"
-                        severity="help" [outlined]="true"></button>
 
+                    <p-button label="View Demo" size="small" [outlined]="true" styleClass="custom-btn"
+                        (click)="redirectToUrl()" />
                     <div class="flex gap-5 text-white">
                         <div class="flex gap-2 align-items-center">
                             <a href="https://github.com/CristianOrizano/App-Pelisflix-React" target="_blank"
-                                class="flex gap-2 align-items-center px-2 py-1 border-round rounded-md transition-all hover:bg-gray-700 no-underline">
+                                class="flex gap-2 align-items-center px-2 py-1 border-round-2xl rounded-md transition-all button-card no-underline">
                                 <app-icon name="github" class="text-2xl"></app-icon>
-                                <span class="text-sm font-medium text-white">Front</span>
+                                <span class="text-sm font-medium text-300">Front</span>
                             </a>
                         </div>
                     </div>
@@ -182,31 +190,30 @@
         </div>
     </div>
 
-    <div class="hover-zoom col-12 md:col-10 border-round  border-300 border-1 shadow-8 p-5 bg-skill mb-5">
-        <div data-aos="fade-left" data-aos-duration="2300" class="grid flex justify-content-center ">
-            <div class="col-12 md:col-5 flex align-items-center">
+    <div class="hover-zoom col-12 md:col-10 border-round-2xl  border-300 border-1 shadow-8 p-5 bg-skill mb-6">
+        <div class="grid flex justify-content-center ">
+            <div class="col-12 md:col-6 flex align-items-center" data-aos="fade-right">
                 <div class="card">
                     <p-galleria [value]="imagesMicros" [responsiveOptions]="responsiveOptions" [circular]="true"
-                        [numVisible]="3" [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true"
-                        [showItemNavigators]="true">
+                        [numVisible]="3" [showThumbnails]="false" [showIndicators]="true" [showIndicatorsOnItem]="true">
                         <ng-template pTemplate="item" let-item>
-                            <img [src]="item.itemImageSrc" class="border-round" width="100%"
-                                style="object-fit: contain;" />
+                            <img [src]="item.itemImageSrc" class="border-round-2xl" />
                         </ng-template>
                     </p-galleria>
                 </div>
             </div>
-            <div class="col-12 md:col-7 px-5">
+            <div class="col-12 md:col-6 px-5" data-aos="fade-right">
                 <h1 class="text-2xl font-bold">
                     <span class="text-white">Sistema de </span>
-                    <span class="text-orange-500">Microservicios</span>
+                    <span class="text-sub">Microservicios</span>
                 </h1>
-                <p class="mt-2 text-sm text-300">
-                    Proyecto de práctica para explorar arquitectura de microservicios con Spring Boot, integrando Eureka
+                <p class="mt-2 text-sm ">
+                    Proyecto para explorar arquitectura de microservicios con Spring Boot, Spring Cloud, integrando
+                    Eureka
                     Server, Config Server, API Gateway y Kafka para comunicación asíncrona. También incluye Zipkin para
                     el rastreo de solicitudes.
                 </p>
-                <h2 class="mt-3 font-semibold text-xl text-100">Tecnologías</h2>
+                <h2 class="mt-3 font-semibold text-xl text-300">Tecnologías</h2>
                 <p class="flex flex-wrap gap-3">
                     <app-icon name="spring"></app-icon>
                     <app-icon name="jwt"></app-icon>
@@ -218,15 +225,14 @@
 
                 <p-divider />
                 <div class="mt-4 flex justify-content-between">
-                    <button pButton pRipple label="View Demo" size="small" class="button-card" severity="help"
-                        [outlined]="true"></button>
 
+                    <p-button label="View Demo" size="small" [outlined]="true" styleClass="custom-btn" />
                     <div class="flex gap-5 text-white">
                         <div class="flex gap-2 align-items-center">
                             <a href="https://github.com/CristianOrizano/App-Microservicios-SpringBoot" target="_blank"
-                                class="flex gap-2 align-items-center px-2 py-1 border-round rounded-md transition-all hover:bg-gray-700 no-underline">
+                                class="flex gap-2 align-items-center px-2 py-1 border-round-2xl rounded-md transition-all button-card no-underline">
                                 <app-icon name="github" class="text-2xl"></app-icon>
-                                <span class="text-sm font-medium text-white">Back</span>
+                                <span class="text-sm font-medium text-300">Back</span>
                             </a>
 
                         </div>

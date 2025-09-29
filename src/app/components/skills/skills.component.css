@@ -16,28 +16,6 @@
   }
 }
 
-.border-neon:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
-  background-color: rgba(81, 219, 240, 0.2);
-  transition: all 0.3s ease-in-out;
-}
-
-.border-neon {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  border-width: 1px;
-  border-style: solid;
-  border-image-slice: 1;
-  border-radius: 6px;
-  animation: neon-border 5s infinite linear;
-
-  mask-image: radial-gradient(circle, white 90%, transparent);
-}
-h2 {
-  filter: drop-shadow(1px 2px 5px rgba(0, 212, 255, 0.5));
-}
 .bg-skill {
   background: #000a1f;
   background: linear-gradient(
@@ -48,4 +26,37 @@ h2 {
     #162234,
     #000000
   );
+}
+
+.tech-card {
+  width: 120px; /* ancho fijo */
+  height: 135px; /* alto fijo, más espacio */
+  display: flex;
+  border: rgb(147, 144, 144) 0.5px solid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.custom-underline::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100px; /* puedes ajustar el ancho */
+  margin: 0 auto;
+  margin-top: 8px;
+  background: linear-gradient(
+    to right,
+    #d9d7d7 0%,
+    #ece8e8 50%,
+    #ff512f 50%,
+    #dd2476 100%
+  );
+}
+
+.tech-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: white 1px solid;
 }

@@ -1,24 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 /* Estilos generales */
-body,
-html {
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   background-color: #181225;
   background: linear-gradient(to right, #181225, #1d142c);
-
+  font-family: "Roboto", sans-serif;
   background-attachment: fixed; /* Evita que el fondo se divida al hacer scroll */
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+.custom-card {
+  border-radius: 10px;
+  border: 0.5px solid #3c2a52;
+  box-shadow: 7px 5px 8px rgba(0, 0, 0, 0.3);
+  background-color: #151e2f;
+  background: linear-gradient(to right, #231831, #19152e);
+}
+
+/* Título (header) */
+.custom-card .p-card-title {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 1px;
+  font-weight: 800;
+  color: #f2efef;
+}
+/* Subtítulo (subheader) */
+.custom-card .p-card-subtitle {
+  background: #ff416c;
+  background: linear-gradient(to bottom, #ff4b2b, #ff416c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
 .container {
   width: 100%;
   max-width: 1250px;
