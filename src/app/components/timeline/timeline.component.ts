@@ -23,13 +23,14 @@ export class TimelineComponent {
   constructor() {
     this.experiences = [
       {
-        company: 'Joyit',
-        role: 'Full Stack Semi Senior',
-        period: 'Jul.2025 - Ago.2025',
+        company: 'VALTX',
+        role: 'Analista Programador',
+        period: 'Oct.2025 - Abr.2026',
         description: [
-          'Levantamiento de requerimientos y diseño de soluciones junto a usuarios clave de Obengroup.',
-          'Desarrollo de aplicaciones fullstack implementando frontend en React 18 y microservicios backend en .NET Core con C#, aplicando principios SOLID y arquitectura escalable.',
-          'Implementación de Entity Framework (v6–v9) en el backend para acceso a datos y gestión de migraciones, con optimización de consultas e índices en SQL.',
+          'Desarrollé y mantuve aplicaciones internas de Backoffice, implementando funcionalidades frontend en Angular',
+          'Implementé y desarrolle microservicios backend en Java, cumpliendo requerimientos funcionales y técnicos',
+          'Participé en reuniones, definiendo soluciones técnicas',
+          'Diseñé y gestioné base de datos en PostgreSQL, asegurando integrida y rendimiento',
         ],
         icon: 'pi pi-desktop',
         color: '#FF9800',
